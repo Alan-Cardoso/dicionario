@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -23,8 +24,8 @@ public class Dicionario {
         String line = "";
         String key = "";
         ArrayList<String> arrayString = new ArrayList<>();
-        HashMap<String,  ArrayList<String>> dic = new HashMap<>();
-        
+        //HashMap<String,  ArrayList<String>> dic = new HashMap<>();
+        Hashtable<String,  ArrayList<String>> dic = new Hashtable<String,  ArrayList<String>>();
         
         try {
             
@@ -80,7 +81,7 @@ public class Dicionario {
         
     }
     
-    public static void printValue( HashMap<String,  ArrayList<String>> dic, String[] args) {
+    public static void printValue( Hashtable<String,  ArrayList<String>> dic, String[] args) {
         
         Set<String> setKey;
         int numKey = 0;
